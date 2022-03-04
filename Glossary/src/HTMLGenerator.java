@@ -40,7 +40,7 @@ public final class HTMLGenerator {
         html.println("<html lang=\"en\">");
         html.println("<head>");
         html.println("<title>" + title + "</title>");
-        html.println("<link rel=\"stylesheet\" href=\"../../src/style.css\">");
+        html.println("<link rel=\"stylesheet\" href=\"../style/style.css\">");
     }
 
     /**

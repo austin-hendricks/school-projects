@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.BufferedReader;
 import java.util.Scanner;
 import java.io.IOException;
@@ -9,6 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Queue;
 import java.util.PriorityQueue;
 import java.util.LinkedList;
+import java.nio.file.*;
 
 /**
  * Glossary creator: generates a group of HTML files based on text file input
@@ -63,24 +63,60 @@ public final class GlossaryMaker {
 
         Queue<String> terms = alphabetizeKeysToQueue(glossary);
 
+        
+        /*
+        * Create proper subdirectories within output file and copy 
+         * necessary files into corresponding folders.
+         */
+        
+        // Grab paths to original files to be copied
+        Path originalImage1Path = Paths.get("data/books2.jpg");
+        Path originalImage2Path = Paths.get("data/books.jpg");
+        Path originalCSSPath = Paths.get("src/style.css");
+        Path originalTextPath = Paths.get(fileName);
+        
+        // Create directories within output folder
+        File datadir = new File(folder + "/data");
+        datadir.mkdirs();
+        File styledir = new File(folder + "/style");
+        styledir.mkdirs();
+        File htmldir = new File(folder + "/html");
+        htmldir.mkdirs();
+        Path outputDataDirectory = Paths.get(folder + "/data");
+        Path outputStyleDir = Paths.get(folder + "/style");
+        
+        // Create destination paths for copies
+        Path cssFileCopy = outputStyleDir.resolve("style.css");
+        Files.deleteIfExists(cssFileCopy);
+        Files.createFile(cssFileCopy);
+        Path image1Copy = outputStyleDir.resolve("books.jpg");
+        Files.deleteIfExists(image1Copy);
+        Files.createFile(image1Copy);
+        Path image2Copy = outputStyleDir.resolve("books2.jpg");
+        Files.deleteIfExists(image2Copy);
+        Files.createFile(image2Copy);
+        Path textCopy = outputDataDirectory.resolve("input.txt");
+        Files.deleteIfExists(textCopy);
+        Files.createFile(textCopy);
+        
+        Files.copy(originalCSSPath, cssFileCopy, StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(originalImage1Path, image1Copy, StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(originalImage2Path, image2Copy, StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(originalTextPath, textCopy, StandardCopyOption.REPLACE_EXISTING);
+        
+        
         // Generate front page of glossary (index.html)
 
-        HTMLGenerator.createFrontPage(terms, folder, glossaryTitle);
+        HTMLGenerator.createFrontPage(terms, folder + "/html", glossaryTitle);
 
         // Create .html file for each term in glossary
 
         for (String term : terms) {
-            HTMLGenerator.createTermPage(term, glossary, folder);
+            HTMLGenerator.createTermPage(term, glossary, folder + "/html");
         }
 
-        // Add CSS file to output directory
-
-        // FileWriter css = new FileWriter(new File(folder + "/style.css"));
-        // css.write("a { color: #444; } a:hover { color: red; } body { background-image: url(\"data/books2.jpg\"); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; padding-left: 3vw; color: #444; font-family: Helvetica, Arial, sans-serif; font-size: calc(16px + 0.75vw); line-height: calc(1.1em + 0.5vw); } hr { width: 50%; text-align: left; margin-left: 0; } h1, h2, h3 { color: black; font-weight: normal; } h1 { font-size: calc(1.2em + 2vw); } h2 { font-size: calc(1em + 1.2vw); } h3 { font-size: calc(1em + 0.2vw); } .definition { width: 50%; } .term { color: red; } .title { color: black; }");
-        // css.close();
-
         // Finished: Print success message.
-
+        
         System.out.println("Success!");
 
         // Close input & output streams.
