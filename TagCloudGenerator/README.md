@@ -18,17 +18,20 @@ Top 100 words, etc). For best results, it is recommended to include no more than
 ## Where is the output?
 
 The program will generate a HTML file as well as a CSS file inside of a folder that is named based upon 
-the user-desired output folder name. This output folder will be added within the "/output/" directory.
+the user-desired output folder name. This output folder will be added within the `/output` directory.
 
 Inside of the output folder, there will be two files: an HTML file and a CSS file. The name of both of these 
-files will correspond to the name of the text file being analyzed. For example, if the path to the .txt file 
-you specify is "data/tomsawyer.txt", then the output files will be named "tomsawyer.html" and "tomsawyer.css".
+files will correspond to the name of the text file being analyzed. For example, if the path to the text file 
+you specify is `data/tomsawyer.txt`, then the output files will be named `tomsawyer.html` and `tomsawyer.css`.
 
 ## How do I use the program?
 
-1. Copy the path to the text file you would like to use for input (several samples already exist under the "/data/" folder).
-2. Navigate to the TagCloudGenerator directory and issue the following command: `java src/tagcloud.java`
-3. Follow the application's prompts to input the path to the desired text file, the desired output folder name, 
+1. Copy the path to the text file you would like to use for input (several samples already exist under the `/data` folder).
+2. Navigate to the TagCloudGenerator directory and issue the following command: 
+```
+java src/tagcloud.java
+```
+4. Follow the application's prompts to input the path to the desired text file, the desired output folder name, 
 as well as the number of words to be included in the output. The application will terminate and notify success.
-4. Navigate to the "/output/" directory and locate the output folder named the same as you specified in the program.
+4. Navigate to the `/output` directory and locate the output folder named the same as you specified in the program.
 5. Enter the folder and open the HTML file with any web browser.
