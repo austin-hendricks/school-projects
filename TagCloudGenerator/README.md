@@ -1,3 +1,5 @@
+###### [Back to all projects in school-projects repo](https://github.com/austin-hendricks/school-projects)
+
 # Tag Cloud Generator
 ###### Java project completed in Autumn of 2020 to generate HTML and CSS based on user input.
 ###### Assignment for Ohio State University's sophomore-level Computer Science course, "Software II"
