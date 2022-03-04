@@ -27,7 +27,7 @@ you specify is `data/tomsawyer.txt`, then the output files will be named `tomsaw
 ## How do I use the program?
 
 1. Copy the path to the text file you would like to use for input (several samples already exist under the `/data` folder).
-2. Navigate to the TagCloudGenerator directory and issue the following command: 
+2. Navigate to the `/TagCloudGenerator` directory and issue the following command: 
 ```
 java src/tagcloud.java
 ```
