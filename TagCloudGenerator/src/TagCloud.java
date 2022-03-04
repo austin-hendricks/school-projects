@@ -23,7 +23,7 @@ import java.util.TreeMap;
  * @author Austin Hendricks
  *
  */
-public final class TagCloudGeneratorStandardJava {
+public final class TagCloud {
 
     /**
      * Compare {@code Integer}s in decreasing numerical order.
@@ -68,7 +68,7 @@ public final class TagCloudGeneratorStandardJava {
     /**
      * Private constructor so this utility class cannot be instantiated.
      */
-    private TagCloudGeneratorStandardJava() {
+    private TagCloud() {
     }
 
     /**
