@@ -1,5 +1,5 @@
 # Tag Cloud Generator
-###### Java project completed in Spring of 2020 to generate HTML and CSS based on user input.
+###### Java project completed in Autumn of 2020 to generate HTML and CSS based on user input.
 ###### Assignment for Ohio State University's sophomore-level Computer Science course, "Software II"
 ###### Author: Austin Hendricks
 
