@@ -62,3 +62,6 @@ My changes after project submission:
 Grade recieved for this project: 
 ### A+ 
 (12/10 possible points)
+
+
+###### [Back to Top](#interactive-html-glossary-generator)
