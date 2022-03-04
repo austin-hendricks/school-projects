@@ -1,0 +1,21 @@
+birdie
+Completing the hole in one less stroke than the par.
+
+Bogey
+Completing the hole in one more stroke than the par.
+
+Double Bogey
+Completing the hole in two more strokes than the par.
+
+eagle
+Completing the hole in two fewer strokes than the par.
+
+Par
+The number of strokes the powers that be determined a golfer should take to complete the hole.
+
+Stroke
+refers to the act of making a swing.
+
+swing
+the action by which a player hits the ball using a golf club.
+

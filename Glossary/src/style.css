@@ -1,0 +1,34 @@
+a { color: #444; }
+a:hover { color: red; }
+
+body {
+	background-image: url("../data/books2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    padding-left: 3vw;
+    color: #444;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: calc(16px + 0.75vw);
+    line-height: calc(1.1em + 0.5vw);
+}
+
+hr {
+    width: 50%;
+    text-align: left;
+    margin-left: 0;
+}
+
+h1, h2, h3 {
+    color: black;
+    font-weight: normal;
+}
+
+h1 { font-size: calc(1.2em + 2vw); }
+h2 { font-size: calc(1em + 1.2vw); }
+h3 { font-size: calc(1em + 0.2vw); }
+
+.definition { width: 50%; }
+.term { color: red; }
+.title { color: black; }
