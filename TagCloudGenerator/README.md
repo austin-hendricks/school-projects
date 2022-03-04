@@ -32,4 +32,3 @@ you specify is "data/tomsawyer.txt", then the output files will be named "tomsaw
 as well as the number of words to be included in the output. The application will terminate and notify success.
 4. Navigate to the "/output/" directory and locate the output folder named the same as you specified in the program.
 5. Enter the folder and open the HTML file with any web browser.
-6. Enjoy!
