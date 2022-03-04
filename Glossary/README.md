@@ -30,7 +30,7 @@ Sample outputs are located within the `/output` folder.
     * Note: sample input files located under `/data` folder.
 4. After making sure Java is installed on your machine, issue the following command:
 ```
-$ java -jar Glossary
+$ java -jar Glossary.jar
 ```
 5. Follow the programs prompts and, once complete, locate the program's output under the `/output` directory.
 
