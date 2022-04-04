@@ -24,8 +24,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             response = str(s.recv(1024).decode('ascii'))
             print(response)
             if response == "Closing connection...":
+                s.close()
                 print(f"Connection with {HOST}:{PORT} closed.")
-                sys.exit()
+                break
 
     except SystemExit:
         print("Exiting.")
