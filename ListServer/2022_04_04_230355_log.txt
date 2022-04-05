@@ -1,0 +1,54 @@
+Mon Apr  4 23:03:55 2022 --> list-server starting on port 7777
+Mon Apr  4 23:03:58 2022 --> Connected by ('127.0.0.1', 49926).
+Mon Apr  4 23:04:03 2022 REQUEST [help] RECIEVED.
+Mon Apr  4 23:04:03 2022 RESPONSE [help] SENT
+Mon Apr  4 23:04:08 2022 REQUEST [echo] RECIEVED.
+Mon Apr  4 23:04:08 2022 RESPONSE [ERROR - invalid format for echo request] SENT
+Mon Apr  4 23:04:10 2022 REQUEST [echo hi] RECIEVED.
+Mon Apr  4 23:04:10 2022 RESPONSE [HI] SENT
+Mon Apr  4 23:04:22 2022 REQUEST [help please] RECIEVED.
+Mon Apr  4 23:04:22 2022 RESPONSE [ERROR - invalid format for help request] SENT
+Mon Apr  4 23:04:32 2022 REQUEST [show] RECIEVED.
+Mon Apr  4 23:04:32 2022 RESPONSE [INFO - No tasks on list.] SENT
+Mon Apr  4 23:04:36 2022 REQUEST [add item1] RECIEVED.
+Mon Apr  4 23:04:36 2022 RESPONSE [Added task (item1) to list.] SENT
+Mon Apr  4 23:04:39 2022 REQUEST [show] RECIEVED.
+Mon Apr  4 23:04:39 2022 RESPONSE [show all tasks] SENT
+Mon Apr  4 23:04:43 2022 REQUEST [complete item1] RECIEVED.
+Mon Apr  4 23:04:43 2022 RESPONSE [Completed task (item1).] SENT
+Mon Apr  4 23:04:46 2022 REQUEST [add item2] RECIEVED.
+Mon Apr  4 23:04:46 2022 RESPONSE [Added task (item2) to list.] SENT
+Mon Apr  4 23:04:49 2022 REQUEST [clearcomp] RECIEVED.
+Mon Apr  4 23:04:49 2022 RESPONSE [Sucessfully cleared all completed tasks.] SENT
+Mon Apr  4 23:04:52 2022 REQUEST [show] RECIEVED.
+Mon Apr  4 23:04:52 2022 RESPONSE [show all tasks] SENT
+Mon Apr  4 23:04:55 2022 REQUEST [delete item2] RECIEVED.
+Mon Apr  4 23:04:55 2022 RESPONSE [ERROR - invalid command] SENT
+Mon Apr  4 23:05:01 2022 REQUEST [remove item2] RECIEVED.
+Mon Apr  4 23:05:01 2022 RESPONSE [Removed task (item2) from list.] SENT
+Mon Apr  4 23:05:05 2022 REQUEST [remove item3] RECIEVED.
+Mon Apr  4 23:05:05 2022 RESPONSE [INFO - task not found] SENT
+Mon Apr  4 23:05:16 2022 REQUEST [complete fakeitem] RECIEVED.
+Mon Apr  4 23:05:16 2022 RESPONSE [INFO - no incomplete task with this name] SENT
+Mon Apr  4 23:05:21 2022 REQUEST [help] RECIEVED.
+Mon Apr  4 23:05:21 2022 RESPONSE [help] SENT
+Mon Apr  4 23:05:28 2022 REQUEST [add task1] RECIEVED.
+Mon Apr  4 23:05:28 2022 RESPONSE [Added task (task1) to list.] SENT
+Mon Apr  4 23:05:31 2022 REQUEST [exists] RECIEVED.
+Mon Apr  4 23:05:31 2022 RESPONSE [ERROR - invalid format for exists request] SENT
+Mon Apr  4 23:05:34 2022 REQUEST [exists task1] RECIEVED.
+Mon Apr  4 23:05:34 2022 RESPONSE [INFO - Task (task1) in list.] SENT
+Mon Apr  4 23:05:37 2022 REQUEST [exists task2] RECIEVED.
+Mon Apr  4 23:05:37 2022 RESPONSE [INFO - Task (task2) not in list.] SENT
+Mon Apr  4 23:05:53 2022 REQUEST [deleteall] RECIEVED.
+Mon Apr  4 23:05:53 2022 RESPONSE [Sucessfully deleted all tasks.] SENT
+Mon Apr  4 23:05:56 2022 REQUEST [deleteall] RECIEVED.
+Mon Apr  4 23:05:56 2022 RESPONSE [No tasks to delete.] SENT
+Mon Apr  4 23:06:01 2022 REQUEST [deleteall please] RECIEVED.
+Mon Apr  4 23:06:01 2022 RESPONSE [ERROR - invalid format for deleteall request] SENT
+Mon Apr  4 23:06:04 2022 REQUEST [exit now] RECIEVED.
+Mon Apr  4 23:06:04 2022 RESPONSE [ERROR - invalid format for exit request] SENT
+Mon Apr  4 23:06:06 2022 REQUEST [exit] RECIEVED.
+Mon Apr  4 23:06:06 2022 RESPONSE [Exit request processed] SENT
+Mon Apr  4 23:06:06 2022 --> Connection with ('127.0.0.1', 49926) closed.
+Mon Apr  4 23:06:06 2022 --> Server closed.

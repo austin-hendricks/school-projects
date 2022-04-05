@@ -1,0 +1,8 @@
+Mon Apr  4 23:10:57 2022 --> list-server starting on port 7777
+Mon Apr  4 23:11:07 2022 --> Connected by ('127.0.0.1', 49990).
+Mon Apr  4 23:11:12 2022 REQUEST [echo wow] RECIEVED.
+Mon Apr  4 23:11:12 2022 RESPONSE [WOW] SENT
+Mon Apr  4 23:11:15 2022 REQUEST [exit] RECIEVED.
+Mon Apr  4 23:11:15 2022 RESPONSE [Exit request processed] SENT
+Mon Apr  4 23:11:15 2022 --> Connection with ('127.0.0.1', 49990) closed.
+Mon Apr  4 23:11:15 2022 --> Server closed.
