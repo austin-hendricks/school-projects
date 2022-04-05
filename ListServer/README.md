@@ -1,6 +1,10 @@
+###### [Back to all projects in school-projects repo](https://github.com/austin-hendricks/school-projects)
+
 # List Server
-##### **Author:** Austin Hendricks
-##### **Date:** April 4, 2022
+###### Python project using socket programming to create interactive server that client can connect to and issue commands to manage a todolist.
+###### Assignment for Ohio State University's _CSE 3461: Computer Networking_ course.
+###### Author: [Austin Hendricks](https://github.com/austin-hendricks)
+###### Date Completed: April 4, 2022
 
 ---
 ## Table of Contents
@@ -42,7 +46,8 @@ $ python client.py 9999
 ---
 ## Log
 Each time the server program begins listening, a log file is created within the same directory.
-View the log to see server log entries for session.
+
+View a log file to see server log entries for that session.
 
 ---
 ## Server Commands
