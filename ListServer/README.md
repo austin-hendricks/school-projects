@@ -8,9 +8,10 @@
 
 ---
 ## Table of Contents
-1. [How to Run](#how-to-run)
-2. [Log](#log)
-3. [Server Commands](#server-commands)
+1. [Technical Requirements and Constraints](#technical-requirements-and-constraints)
+2. [How to Run](#how-to-run)
+3. [Log](#log)
+4. [Server Commands](#server-commands)
     - [add](#add)
     - [clearcomp](#clearcomp)
     - [complete](#complete)
@@ -21,6 +22,32 @@
     - [help](#help)
     - [remove](#remove)
     - [show](#show)
+
+---
+## Technical Requirements and Constraints
+This is a request/response type network server application implemented using socket programming techniques to interact with the Internet Protocol Stack of the host OS.
+
+### Server Requirements (fully met)
+1. Server must accept and respond to a minimum of five (5) different commands. One of these can be used to shut down your server application gracefully.
+2. A configuration file or command line arguments must be used to set the network port on which the server application will "listen", thereby adhering to industry "best practice".
+3. The server must output a log of received commands and responses sent. Each line of the log should contain:
+   - The current date and time
+   - The word "REQUEST" or "RESPONSE" depending on what the server is doing
+   - A log entry level (e.g., "INFO", "ERROR", etc.)
+   - An appropriate request or response message
+4. Upon start up, the server application must display a status message that includes the port on which it is listening.
+
+### Client Requirements (fully met)
+1. A configuration file, command line argument, or user prompt must be used to obtain the server information (server IP address and port) to use.
+2. If an invalid command is received, an error must be displayed stating this and then display a list of valid commands.
+3. If a valid command was received, but is improperly formatted, a detailed response must be displayed.
+
+### Constraints (fully met)
+1. The client and server applications must be able to run from two different IP addresses. For practical purposes, one may be the loopback address if both the client and server are run on the same host.
+2. Applications may not be developed as a web application (an application built on top of a web browser and/or web server).
+3. Each command entered in the client should result in a request being sent to the server.
+4. Each request received by the server should result in a response sent back to the client.
+5. Both the client and server must run without runtime or interpreter errors.
 
 ---
 ## How to Run
